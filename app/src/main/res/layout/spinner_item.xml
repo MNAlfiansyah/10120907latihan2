@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Nim : 10120907-->
+<!--Nama : Muhammad Nur Alviansyah-->
+<!--Kelas : IF10-->
+<!--Tanggal : 29 April 2023-->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:textSize="15sp"
+    android:textColor="@color/backgroundGrey"
+    android:layout_gravity="start"
+    android:paddingStart="-1dp"
+    android:paddingEnd="-1dp"
+    android:paddingBottom="8dp"
+    />

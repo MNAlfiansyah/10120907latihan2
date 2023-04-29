@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Nim : 10120907-->
+<!--Nama : Muhammad Nur Alviansyah-->
+<!--Kelas : IF10-->
+<!--Tanggal : 29 April 2023-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextUsername"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:inputType="textPersonName"
+        style="@style/inputEditTextRegister"
+        android:hint="@string/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextEmail"
+        style="@style/inputEditTextRegister"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUsername"
+        app:layout_constraintStart_toStartOf="@+id/editTextUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextPhone"
+        style="@style/inputEditTextRegister"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_41dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="@dimen/dimen_176dp"
+            android:textSize="@dimen/dimen_14sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/backgroundGrey"
+            android:paddingStart="@dimen/dimen_20dp"
+            android:paddingEnd="@dimen/dimen_20dp"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:textSize="@dimen/dimen_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/backgroundGrey"
+            android:paddingStart="@dimen/dimen_20dp"
+            android:paddingEnd="@dimen/dimen_20dp"
+            android:text="@string/female" />
+
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/blood"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="@dimen/dimen_140dp"
+        android:layout_height="@dimen/dimen_50dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Spinner
+        android:id="@+id/reshus"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="@dimen/dimen_140dp"
+        android:layout_height="@dimen/dimen_50dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextPassword"
+        style="@style/inputEditTextRegister"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/reshus"
+        app:layout_constraintStart_toStartOf="@+id/blood"
+        app:layout_constraintTop_toBottomOf="@+id/reshus" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextRetype"
+        style="@style/inputEditTextRegister"
+        android:hint="@string/retype"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <RadioGroup
+        android:id="@+id/Group"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_41dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editTextRetype"
+        app:layout_constraintStart_toStartOf="@+id/editTextRetype"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRetype">
+
+        <RadioButton
+            android:id="@+id/personal"
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_20dp"
+            android:paddingEnd="@dimen/dimen_20dp"
+            android:text="@string/personal"
+            android:textColor="@color/backgroundGrey"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <RadioButton
+            android:id="@+id/organisasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_20dp"
+            android:paddingEnd="@dimen/dimen_5dp"
+            android:text="@string/organisasi"
+            android:textColor="@color/backgroundGrey"
+            android:textSize="@dimen/dimen_14sp"/>
+
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/job"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="@dimen/dimen_337dp"
+        android:layout_height="@dimen/dimen_50dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextRetype"
+        app:layout_constraintStart_toStartOf="@+id/editTextRetype"
+        app:layout_constraintTop_toBottomOf="@+id/Group" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextJob"
+        style="@style/inputEditTextRegister"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:hint="@string/home"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/job"
+        app:layout_constraintStart_toStartOf="@+id/job"
+        app:layout_constraintTop_toBottomOf="@+id/job" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextDefault"
+        style="@style/inputEditTextRegister"
+        android:hint="@string/defaultLoc"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextJob"
+        app:layout_constraintStart_toStartOf="@+id/editTextJob"
+        app:layout_constraintTop_toBottomOf="@+id/editTextJob"
+        android:drawableEnd="@drawable/ic_blood_needed_location"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="@dimen/dimen_291dp"
+        android:layout_height="@dimen/dimen_44dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:text="@string/agree"
+        android:textColor="@color/textGrey"
+        app:layout_constraintStart_toStartOf="@+id/editTextDefault"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDefault" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonRegister"
+        style="@style/buttonRegisterOutlined"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDefault"
+        app:layout_constraintStart_toStartOf="@+id/editTextDefault"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

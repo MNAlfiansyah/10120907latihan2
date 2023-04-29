@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Nim : 10120907-->
+<!--Nama : Muhammad Nur Alviansyah-->
+<!--Kelas : IF10-->
+<!--Tanggal : 29 April 2023-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlmostActivity"
+    android:background="@color/backgroundColor"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_230dp"
+        android:text="@string/verifyAccount"
+        android:textSize="@dimen/dimen_40sp"
+        android:textColor="@color/white"
+        style="@style/textRobotoLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:gravity="center"
+        android:text="@string/sendVerif"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_15sp"
+        style="@style/textRobotoLight"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editUsername"
+        style="@style/inputEditTextVerify"
+        android:layout_marginTop="@dimen/dimen_60dp"
+        android:hint="@string/enterVerif"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSend"
+        style="@style/buttonLoginOutlined"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/send"
+        app:layout_constraintEnd_toEndOf="@+id/editUsername"
+        app:layout_constraintStart_toStartOf="@+id/editUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editUsername" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/dimen_210dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSend"
+        app:layout_constraintStart_toStartOf="@+id/buttonSend"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSend">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/dimen_140dp"
+            android:layout_height="@dimen/dimen_22dp"
+            android:gravity="center"
+            style="@style/textRobotoLight"
+            android:text="@string/getCode"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textButtonRegister"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_22dp"
+            android:gravity="center"
+            android:text="@string/resend"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

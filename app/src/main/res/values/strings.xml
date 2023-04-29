@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">10120907latihan2</string>
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="retype">Retype Password</string>
+    <string name="home">Home Address</string>
+    <string name="verify">Verify</string>
+    <string name="verifyAccount">Verify your Account</string>
+    <string name="defaultLoc">Default Location</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="personal">Personal</string>
+    <string name="organisasi">Organizatation</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="facebook">Connect With Facebook</string>
+    <string name="akun">doesn\'t have account ?</string>
+    <string name="register">Register</string>
+    <string name="agree">Agree with Terms and Conditions</string>
+    <string name="almost">Almost There</string>
+    <string name="thank">Thank you for registering with us. one more \nstep, you need to check your email \nto active your account</string>
+    <string name="sendVerif">We have send verification code to your email</string>
+    <string name="enterVerif">enter verification code here…</string>
+    <string name="send">Send</string>
+    <string name="getCode">doesn\'t get the code ?</string>
+    <string name="resend">Resend</string>
+    <string name="headerDesc" >Background Header</string>
+    <string name="name" >Ristian Aditya</string>
+    <string name="bodyProfile" >Blood type : O</string>
+    <string name="intGive" >75</string>
+    <string name="titleBlood" >BLOOD GIVE</string>
+    <string name="intReceived" >100</string>
+    <string name="titleReceived" >BLOOD RECEIVED</string>
+    <string name="intThank" >330</string>
+    <string name="titleThank" >THANKS</string>
+    <string name="titleSearch" >Search Donor</string>
+    <string name="bodySearch" >Search donor near you</string>
+    <string name="titleNeeded" >Blood Needed</string>
+    <string name="bodyNeeded" >4 User need blood</string>
+    <string name="titleMessage" >Message</string>
+    <string name="bodyMessage" >5 New Message</string>
+    <string name="titleDonor" >Donor History</string>
+    <string name="bodyDonor" >5 Gives, 2 Received</string>
+
+    <string-array name="type">
+        <item>Blood Type</item>
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+        <item>Type 4</item>
+        <item>Type 5</item>
+    </string-array>
+
+    <string-array name="typeReshus">
+        <item>Reshus</item>
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+        <item>Type 4</item>
+        <item>Type 5</item>
+    </string-array>
+
+    <string-array name="typeJob">
+        <item>Job</item>
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+        <item>Type 4</item>
+        <item>Type 5</item>
+    </string-array>
+</resources>

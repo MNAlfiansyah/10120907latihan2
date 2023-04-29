@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="inputEditTextLogin" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">@dimen/dimen_337dp</item>
+        <item name="android:layout_height">@dimen/dimen_51dp</item>
+        <item name="android:gravity">top</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <style name="buttonLoginOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">@dimen/dimen_335dp</item>
+        <item name="android:layout_height">@dimen/dimen_55dp</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="inputEditTextRegister" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">@dimen/dimen_337dp</item>
+        <item name="android:layout_height">@dimen/dimen_50dp</item>
+        <item name="android:gravity">top</item>
+        <item name="backgroundTint">@color/backgroundGrey</item>
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <style name="buttonRegisterOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">@dimen/dimen_337dp</item>
+        <item name="android:layout_height">@dimen/dimen_55dp</item>
+        <item name="strokeColor">@color/backgroundColor</item>
+        <item name="android:textColor">@color/backgroundColor</item>
+    </style>
+    <style name="inputEditTextVerify" parent="@style/textRobotoLight">
+        <item name="android:layout_width">@dimen/dimen_337dp</item>
+        <item name="android:layout_height">@dimen/dimen_51dp</item>
+        <item name="android:gravity">top</item>
+        <item name="backgroundTint">@color/textBlue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

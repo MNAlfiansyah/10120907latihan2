@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Nim : 10120907-->
+<!--Nama : Muhammad Nur Alviansyah-->
+<!--Kelas : IF10-->
+<!--Tanggal : 29 April 2023-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAtas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_153dp"
+        android:scaleType="fitXY"
+        app:cardBackgroundColor="#E4E4E4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_header_side_menu" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/dimen_104dp"
+        android:layout_height="@dimen/dimen_104dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimen_150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewAtas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewAtas">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dimen_95dp"
+            android:layout_height="@dimen/dimen_95dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/dimen_100dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/photo" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_side_menu" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView5"
+        android:layout_width="@dimen/dimen_35dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_notification" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_23sp"
+        android:textAppearance="@style/textTitleProfile"
+        android:textColor="@color/backgroundColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bodyProfile"
+        android:textSize="@dimen/dimen_15sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@color/colorLine"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_min10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textGive"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:text="@string/intGive"
+                android:textColor="@color/backgroundColor"
+                android:textSize="@dimen/dimen_30sp"
+                android:textAppearance="@style/textTitleProfile" />
+
+            <TextView
+                android:id="@+id/textBodyGive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/titleBlood"
+                android:textAppearance="@style/textRobotoLight"
+                android:textSize="@dimen/dimen_11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_min10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textReceived"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:text="@string/intReceived"
+                android:textColor="@color/backgroundColor"
+                android:textSize="@dimen/dimen_30sp"
+                android:textAppearance="@style/textTitleProfile"/>
+
+            <TextView
+                android:id="@+id/textBodyReceived"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/titleReceived"
+                android:textColor="@color/black"
+                android:textAppearance="@style/textRobotoLight"
+                android:textSize="@dimen/dimen_11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_min10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textThank"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:text="@string/intThank"
+                android:textColor="@color/backgroundColor"
+                android:textSize="@dimen/dimen_30sp"
+                android:textAppearance="@style/textTitleProfile" />
+
+            <TextView
+                android:id="@+id/textBodyThank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/textRobotoLight"
+                android:text="@string/titleThank"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_11sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/colorLine"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_35dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="@dimen/dimen_170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView6"
+                android:layout_width="@dimen/dimen_95dp"
+                android:layout_height="@dimen/dimen_95dp"
+                app:srcCompat="@drawable/ic_search_donor" />
+
+            <TextView
+                android:id="@+id/textDonor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:gravity="center"
+                android:text="@string/titleSearch"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/textTitleProfile" />
+
+            <TextView
+                android:id="@+id/textBodyDonor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/bodySearch"
+                android:textSize="@dimen/dimen_11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="@dimen/dimen_170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageNeeded"
+                android:layout_width="@dimen/dimen_95dp"
+                android:layout_height="@dimen/dimen_95dp"
+                app:srcCompat="@drawable/ic_blood_needed" />
+
+            <TextView
+                android:id="@+id/textNeeded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:gravity="center"
+                android:text="@string/titleNeeded"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/textTitleProfile" />
+
+            <TextView
+                android:id="@+id/textBodyNeeded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/bodyNeeded"
+                android:textSize="@dimen/dimen_11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBottom"
+            android:layout_width="@dimen/dimen_170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView7"
+                android:layout_width="@dimen/dimen_95dp"
+                android:layout_height="@dimen/dimen_95dp"
+                app:srcCompat="@drawable/ic_message" />
+
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:gravity="center"
+                android:text="@string/titleMessage"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/textTitleProfile" />
+
+            <TextView
+                android:id="@+id/textBodyMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/bodyMessage"
+                android:textSize="@dimen/dimen_11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBottom2"
+            android:layout_width="@dimen/dimen_170dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageHistory"
+                android:layout_width="@dimen/dimen_95dp"
+                android:layout_height="@dimen/dimen_95dp"
+                app:srcCompat="@drawable/ic_donor_history" />
+
+            <TextView
+                android:id="@+id/textHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/titleDonor"
+                android:textSize="@dimen/dimen_16sp"
+                android:textAppearance="@style/textTitleProfile" />
+
+            <TextView
+                android:id="@+id/textBodyHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/bodyDonor"
+                android:textSize="@dimen/dimen_11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
